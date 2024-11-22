@@ -1,100 +1,103 @@
-# Optimal-Control-Softwares
+# Optimal Control Software Repository
 
-Software
-Members of the lab develop open source software packages in the field of optimization and control. Some of the packages attracted already a larger developer community and some are maintained by previous members of the team. For each package, information and links with installation instructions can be found below, first for software packages that are actively developed or supported, and second for past software developments.
+Welcome to the **Optimal Control Software Repository**, a curated collection of tools and software packages for optimization and control. These tools cover a variety of needs, from solving optimal control problems for embedded systems to handling nonsmooth dynamical systems, model predictive control, and more.
 
+This repository is structured to help users quickly locate the most suitable tools for their projects and includes installation instructions, links to documentation, and source code for each software package.
 
-Current Software
+---
 
-acados
-Fast and embedded solvers for nonlinear optimal control.
-SQP optimal-control Model Predictive Control
+## **Current Software**
 
-acados
-acados is a software package for the efficient solution of optimal control and estimation problems. It is the successor of the ACADO software package developed at KU Leuven and University of Freiburg by the team of Prof. Moritz Diehl. It provides a collection of computationally efficient building blocks tailored to optimal control and estimation problems. Among others, it implements: modules for the integration of ordinary differential equations (ODE) and differential-algebraic equations (DAE), interfaces to state-of-the-art QP solvers like HPIPM, qpOASES, DAQP, qpDUNES and OSQP, condensing routines and nonlinear programming solvers based on the real-time iteration framework. The back-end of acados uses the high-performance linear algebra package BLASFEO, in order to boost computational efficiency for small to medium scale matrices typical of embedded optimization applications. MATLAB, Octave and Python interfaces can be used to conveniently describe optimal control problems and generate self-contained C code that can be readily deployed on embedded platforms.
+### [acados](https://github.com/acados/acados)
+**Keywords**: Fast and embedded solvers, nonlinear optimal control, model predictive control.
 
-The documentation of acados can be found on docs.acados.org/
+acados provides efficient solutions for optimal control and estimation problems. Key features include:
+- Modules for ODE and DAE integration.
+- Interfaces to advanced QP solvers like HPIPM, qpOASES, DAQP, qpDUNES, and OSQP.
+- Nonlinear programming solvers using the real-time iteration framework.
+- Python, MATLAB, and Octave interfaces.
 
-The source code is available on the acados github repository (https://github.com/acados/acados).
+Learn more on the [official documentation page](https://docs.acados.org/).
 
+---
 
-nosnoc
-nosnoc (NOnSmooth Numerical Optimal Control) is a tool for numerically solving optimal control problems with nonsmooth dynamical systems with switches and/or state jumps.
-optimal-control trajectory-optimization
+### [nosnoc](https://github.com/nurkanovic/nosnoc)
+**Keywords**: Nonsmooth dynamics, state jumps, optimal control.
 
-nosnoc
-nosnoc is a tool for numerically solving optimal control problems with nonsmooth dynamical systems with switches and/or state jumps. It supports:
+nosnoc specializes in solving optimal control problems for systems with nonsmooth dynamics, such as switches and state jumps. Highlights:
+- Automatic discretization with the FESD method for high accuracy.
+- Support for Filippov systems and time-freezing formulations.
+- Solves Mathematical Programs with Complementarity Constraints (MPCCs).
 
-Automatic discretization via the FESD method - high accuracy and correct sensitivities. Note that classical time-stepping methods only have first-order accuracy and wrong sensitivities even when they appear to be differentiable.
+Find tutorials and examples on the [official website](https://www.syscop.de/research/software/nosnoc).
 
-Automatic reformulations of systems with state jumps (e.g. contact problems) via time-freezing into Filippov systems/PSS. (enables high accuracy even for systems with state jumps)
+---
 
-Solving the nonsmooth nonlinear programs via homotopy methods. Enables the use of off-the-shelf solvers like IPOPT and SNOPT.
+### [HPIPM](https://github.com/giaf/hpipm)
+**Keywords**: High-performance QP solvers, interior-point methods.
 
-nosnoc relies on the recently introduced Finite Elements with Switch Detection (FESD) which enables high accuracy optimal control of systems with switches and jumps. It enables the treatment of a broad class of nonsmooth systems in a unified way.
+HPIPM is a high-performance solver for convex quadratic programs tailored to embedded optimization. It leverages the BLASFEO library for efficient computation. Key applications include model predictive control and tree-structured QPs.
 
-nosnoc offers several ways to treat switched systems, piecewise smooth systems, Filippov systems, hybrid systems, rigid body models with impacts and friction in simulation, and optimal control. It discretizes a Dynamic Complementarity System (DCS) with the FESD method and solves the resulting mathematical program with complementarity constraints (MPCCs). The MPCCs are solved in a homotopy loop with a standard solver like IPOPT or SNOPT. The user may directly provide a DCS or define the different modes of a Filippov system and the reformulation is automated.
+Visit the [HPIPM GitHub repository](https://github.com/giaf/hpipm) for installation and examples.
 
-The package is based on CasADi (https://www.syscop.de/research/software/nosnoc#:~:text=is%20based%20on-,CasADi,-.%20It%20has%20both). It has both a MATLAB and python version, the source code can be found at:
-https://github.com/nurkanovic/nosnoc
-https://www.syscop.de/research/software/nosnoc#:~:text=nosnoc%20for%20MATLAB-,nosnoc%20for%20python%C2%A0,-Copyright%20%C2%A9%202024%20University
+---
 
+### [TuneMPC](https://github.com/jdeschut/tunempc)
+**Keywords**: Economic tuning, nonlinear MPC.
 
-HPIPM
-High-performance interior-point-method QP solvers
-HPC QP interior-point-method
+TuneMPC is a Python package that enables economic tuning of nonlinear model predictive control problems, optimizing tracking schemes for equivalence with economic NMPC.
 
-HPIPM
-This is HPIPM, a high-performance interior-point method solver for dense, optimal control- and tree-structured convex quadratic programs. It provides efficient implementations of dense and structure-exploiting algorithms to solve small to medium scale problems arising in model predictive control and embedded optimization in general and it relies on the high-performance linear algebra package BLASFEO (https://www.syscop.de/research/software/syscop.de/research/software/blasfeo).
+Explore the tool on its [GitHub repository](https://github.com/jdeschut/tunempc).
 
-For an installation guide, examples or benchmarks, please visit the HPIPM github repository (https://github.com/giaf/hpipm).
+---
 
+### [AWEbox](https://github.com/awebox/awebox)
+**Keywords**: Airborne wind energy, optimal control.
 
-TuneMPC
-Economic tuning of (nonlinear) model predictive control problems.
-Model Predictive Control
-TuneMPC
-TuneMPC is a Python package for economic tuning of nonlinear model predictive control (NMPC) problems.
+AWEbox is an open-source Python toolbox for modeling and optimizing airborne wind energy systems. It supports:
+- Single- and multi-drone systems.
+- User-defined 3D wind profiles.
+- Homotopy strategies for robustness.
 
-More precisely, it implements a formal procedure that tunes a tracking (N)MPC scheme so that it is locally first-order equivalent to economic NMPC. For user-provided system dynamics, constraints and economic objective, TuneMPC enables automated computation of optimal steady states and periodic trajectories, and spits out corresponding tuned stage cost matrices.
+Get started on the [AWEbox GitHub repository](https://github.com/awebox/awebox).
 
-The tool is publicly available at:
-https://github.com/jdeschut/tunempc
+---
 
+### [CasADi](https://github.com/casadi/casadi)
+**Keywords**: Symbolic differentiation, dynamic optimization.
 
-AWEbox
-Modeling and optimal control of single- and multi-drone airborne wind energy systems
-optimal control airborne wind energy
-AWEbox
-AWEbox is an open-source Python toolbox for modeling and optimal control of AWE systems. Among others, it provides an implementation of validated models tailored for optimal control, and it takes away from the user the burden of formulating and numerically solving common AWE optimal control problems (OCP). A distinctive feature of AWEbox is that it supports optimization of multi-drone systems next to the prevalent single-drone variant as well. The second particular focus of the toolbox is robustness with respect to initialization, which we achieve by means of a formal homotopy strategy. The toolbox supports rigid-wing, lift- and drag-mode AWE systems and is capable of embedding user-provided 3D wind profiles. Building on the open-source optimization framework CasADi, it can be a particularly useful component in AWE system toolchains for performance assessment, system design, controller synthesis, or in a wide area of academic research ranging from AWE modeling to optimization algorithms.
+CasADi is a powerful framework for algorithmic differentiation and numeric optimization, particularly suited for dynamic optimization. Features include:
+- Collocation and shooting-based approaches for ODE/DAE integration.
+- Efficient computation of derivatives for NLP solvers.
 
-The software is publicly available at:
-https://github.com/awebox/awebox
+Access tutorials and documentation on the [CasADi webpage](https://web.casadi.org/).
 
-CasADi
-CasADi (https://web.casadi.org/) is a symbolic framework for algorithmic differentiation and numeric optimization. Using the syntax of computer algebra systems, it allows users to construct symbolic expressions consisting of either scalar- or (sparse) matrix-valued operations. These expressions can then be efficiently differentiated using state-of-the-art algorithms for algorithmic differentiation in forward and reverse modes and graph coloring techniques for generating complete, large and sparse Jacobians and Hessians.
+---
 
-The main purpose of the tool is to be a low-level tool for quick, yet highly efficient implementation of algorithms for nonlinear numerical optimization. Of particular interest is dynamic optimization, using either a collocation approach, or a shooting-based approach using embedded ODE/DAE-integrators. In either case, CasADi relieves the user from the work of efficiently calculating the relevant derivative or ODE/DAE sensitivity information to an arbitrary degree, as needed by the NLP solver.
+### [BLASFEO](https://github.com/giaf/blasfeo)
+**Keywords**: Linear algebra, high-performance computing.
 
-For an installation guide, tutorial examples and a detailed documentation, please visit the CasADi (https://web.casadi.org/) webpage or the CasADi github repository (https://github.com/casadi/casadi).
+BLASFEO provides optimized linear algebra routines for matrices of moderate size, outperforming other BLAS implementations in embedded optimization contexts.
 
+Visit the [BLASFEO GitHub repository](https://github.com/giaf/blasfeo) for installation and benchmarks.
 
-BLASFEO
-BLASFEO(https://blasfeo.syscop.de/) (as BLAS For Embedded Optimization) provides a set of basic linear algebra routines, performance-optimized for matrices of moderate size (up to a couple hundreds elements in each dimension), as typically encountered in embedded optimization.
-linear algebra HPC
-BLASFEO
-BLASFEO (as BLAS For Embedded Optimization) provides a set of basic linear algebra routines, performance-optimized for matrices of moderate size (up to a couple hundreds elements in each dimension), as typically encountered in embedded optimization applications.
-In the target matrix size range, the optimized version of BLASFEO outperforms both open-source (e.g. OpenBLAS, BLIS, ATLAS) and proprietary (e.g. MKL) BLAS and LAPACK implementations.
+---
 
+### [LCQPow](https://github.com/hallfjonas/LCQPow)
+**Keywords**: Quadratic programs, complementarity constraints.
 
-For an installation guide, examples or benchmarks, please visit (https://blasfeo.syscop.de/) the BLASFEO webpage or the BLASFEO github repository (https://github.com/giaf/blasfeo).
+LCQPow is an open-source solver for quadratic programs with linear complementarity constraints, utilizing a penalty homotopy approach. The methodology is detailed in [this paper](https://ieeexplore.ieee.org/abstract/document/9439931).
 
+Explore examples and installation instructions on the [LCQPow GitHub repository](https://github.com/hallfjonas/LCQPow).
 
-LCQPow
-A Solver for Quadratic Programs with Linear Complementarity Constraints
-LCQPow
-LCQPow is a open-source solver for Quadratic Programs with Complementarity Constraints. The approach is based on a standard penalty homotopy reformulated using sequential convex programming. The convex sequence derives from linearizing the (necessarily) nonconvex penalty function. This leads to a constant objective Hessian matrix throughout all iterates, and thus enables us to solve the linear complementarity quadratic program with a single factorization of the KKT matrix (by using qpOASES).
+---
 
-The entire strategy is presented in detail in this paper (https://ieeexplore.ieee.org/abstract/document/9439931).
+## **Contributions**
 
-Installation instructions and examples can be found on github (https://github.com/hallfjonas/LCQPow).
+If you have suggestions or would like to contribute a new tool, feel free to open a pull request or an issue. This repository aims to grow with the optimization and control community!
+
+---
+
+## **License**
+
+Each software package is maintained by its respective authors and teams. Please refer to the individual repositories for licensing details.
