@@ -62,4 +62,11 @@ The tool is publicly available at:
 https://github.com/jdeschut/tunempc
 
 
+AWEbox
+Modeling and optimal control of single- and multi-drone airborne wind energy systems
+optimal control airborne wind energy
+AWEbox
+AWEbox is an open-source Python toolbox for modeling and optimal control of AWE systems. Among others, it provides an implementation of validated models tailored for optimal control, and it takes away from the user the burden of formulating and numerically solving common AWE optimal control problems (OCP). A distinctive feature of AWEbox is that it supports optimization of multi-drone systems next to the prevalent single-drone variant as well. The second particular focus of the toolbox is robustness with respect to initialization, which we achieve by means of a formal homotopy strategy. The toolbox supports rigid-wing, lift- and drag-mode AWE systems and is capable of embedding user-provided 3D wind profiles. Building on the open-source optimization framework CasADi, it can be a particularly useful component in AWE system toolchains for performance assessment, system design, controller synthesis, or in a wide area of academic research ranging from AWE modeling to optimization algorithms.
 
+The software is publicly available at:
+https://github.com/awebox/awebox
