@@ -70,3 +70,12 @@ AWEbox is an open-source Python toolbox for modeling and optimal control of AWE 
 
 The software is publicly available at:
 https://github.com/awebox/awebox
+
+CasADi
+CasADi (https://web.casadi.org/) is a symbolic framework for algorithmic differentiation and numeric optimization. Using the syntax of computer algebra systems, it allows users to construct symbolic expressions consisting of either scalar- or (sparse) matrix-valued operations. These expressions can then be efficiently differentiated using state-of-the-art algorithms for algorithmic differentiation in forward and reverse modes and graph coloring techniques for generating complete, large and sparse Jacobians and Hessians.
+
+The main purpose of the tool is to be a low-level tool for quick, yet highly efficient implementation of algorithms for nonlinear numerical optimization. Of particular interest is dynamic optimization, using either a collocation approach, or a shooting-based approach using embedded ODE/DAE-integrators. In either case, CasADi relieves the user from the work of efficiently calculating the relevant derivative or ODE/DAE sensitivity information to an arbitrary degree, as needed by the NLP solver.
+
+For an installation guide, tutorial examples and a detailed documentation, please visit the CasADi (https://web.casadi.org/) webpage or the CasADi github repository (https://github.com/casadi/casadi).
+
+
