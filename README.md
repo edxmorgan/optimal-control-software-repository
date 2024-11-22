@@ -48,3 +48,18 @@ HPIPM
 This is HPIPM, a high-performance interior-point method solver for dense, optimal control- and tree-structured convex quadratic programs. It provides efficient implementations of dense and structure-exploiting algorithms to solve small to medium scale problems arising in model predictive control and embedded optimization in general and it relies on the high-performance linear algebra package BLASFEO (https://www.syscop.de/research/software/syscop.de/research/software/blasfeo).
 
 For an installation guide, examples or benchmarks, please visit the HPIPM github repository (https://github.com/giaf/hpipm).
+
+
+TuneMPC
+Economic tuning of (nonlinear) model predictive control problems.
+Model Predictive Control
+TuneMPC
+TuneMPC is a Python package for economic tuning of nonlinear model predictive control (NMPC) problems.
+
+More precisely, it implements a formal procedure that tunes a tracking (N)MPC scheme so that it is locally first-order equivalent to economic NMPC. For user-provided system dynamics, constraints and economic objective, TuneMPC enables automated computation of optimal steady states and periodic trajectories, and spits out corresponding tuned stage cost matrices.
+
+The tool is publicly available at:
+https://github.com/jdeschut/tunempc
+
+
+
