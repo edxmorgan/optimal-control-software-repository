@@ -88,3 +88,13 @@ In the target matrix size range, the optimized version of BLASFEO outperforms bo
 
 
 For an installation guide, examples or benchmarks, please visit (https://blasfeo.syscop.de/) the BLASFEO webpage or the BLASFEO github repository (https://github.com/giaf/blasfeo).
+
+
+LCQPow
+A Solver for Quadratic Programs with Linear Complementarity Constraints
+LCQPow
+LCQPow is a open-source solver for Quadratic Programs with Complementarity Constraints. The approach is based on a standard penalty homotopy reformulated using sequential convex programming. The convex sequence derives from linearizing the (necessarily) nonconvex penalty function. This leads to a constant objective Hessian matrix throughout all iterates, and thus enables us to solve the linear complementarity quadratic program with a single factorization of the KKT matrix (by using qpOASES).
+
+The entire strategy is presented in detail in this paper (https://ieeexplore.ieee.org/abstract/document/9439931).
+
+Installation instructions and examples can be found on github (https://github.com/hallfjonas/LCQPow).
