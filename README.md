@@ -79,3 +79,12 @@ The main purpose of the tool is to be a low-level tool for quick, yet highly eff
 For an installation guide, tutorial examples and a detailed documentation, please visit the CasADi (https://web.casadi.org/) webpage or the CasADi github repository (https://github.com/casadi/casadi).
 
 
+BLASFEO
+BLASFEO(https://blasfeo.syscop.de/) (as BLAS For Embedded Optimization) provides a set of basic linear algebra routines, performance-optimized for matrices of moderate size (up to a couple hundreds elements in each dimension), as typically encountered in embedded optimization.
+linear algebra HPC
+BLASFEO
+BLASFEO (as BLAS For Embedded Optimization) provides a set of basic linear algebra routines, performance-optimized for matrices of moderate size (up to a couple hundreds elements in each dimension), as typically encountered in embedded optimization applications.
+In the target matrix size range, the optimized version of BLASFEO outperforms both open-source (e.g. OpenBLAS, BLIS, ATLAS) and proprietary (e.g. MKL) BLAS and LAPACK implementations.
+
+
+For an installation guide, examples or benchmarks, please visit (https://blasfeo.syscop.de/) the BLASFEO webpage or the BLASFEO github repository (https://github.com/giaf/blasfeo).
