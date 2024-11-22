@@ -38,3 +38,13 @@ nosnoc offers several ways to treat switched systems, piecewise smooth systems, 
 The package is based on CasADi (https://www.syscop.de/research/software/nosnoc#:~:text=is%20based%20on-,CasADi,-.%20It%20has%20both). It has both a MATLAB and python version, the source code can be found at:
 https://github.com/nurkanovic/nosnoc
 https://www.syscop.de/research/software/nosnoc#:~:text=nosnoc%20for%20MATLAB-,nosnoc%20for%20python%C2%A0,-Copyright%20%C2%A9%202024%20University
+
+
+HPIPM
+High-performance interior-point-method QP solvers
+HPC QP interior-point-method
+
+HPIPM
+This is HPIPM, a high-performance interior-point method solver for dense, optimal control- and tree-structured convex quadratic programs. It provides efficient implementations of dense and structure-exploiting algorithms to solve small to medium scale problems arising in model predictive control and embedded optimization in general and it relies on the high-performance linear algebra package BLASFEO (https://www.syscop.de/research/software/syscop.de/research/software/blasfeo).
+
+For an installation guide, examples or benchmarks, please visit the HPIPM github repository (https://github.com/giaf/hpipm).
