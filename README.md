@@ -16,3 +16,25 @@ acados is a software package for the efficient solution of optimal control and e
 The documentation of acados can be found on docs.acados.org/
 
 The source code is available on the acados github repository (https://github.com/acados/acados).
+
+
+nosnoc
+nosnoc (NOnSmooth Numerical Optimal Control) is a tool for numerically solving optimal control problems with nonsmooth dynamical systems with switches and/or state jumps.
+optimal-control trajectory-optimization
+
+nosnoc
+nosnoc is a tool for numerically solving optimal control problems with nonsmooth dynamical systems with switches and/or state jumps. It supports:
+
+Automatic discretization via the FESD method - high accuracy and correct sensitivities. Note that classical time-stepping methods only have first-order accuracy and wrong sensitivities even when they appear to be differentiable.
+
+Automatic reformulations of systems with state jumps (e.g. contact problems) via time-freezing into Filippov systems/PSS. (enables high accuracy even for systems with state jumps)
+
+Solving the nonsmooth nonlinear programs via homotopy methods. Enables the use of off-the-shelf solvers like IPOPT and SNOPT.
+
+nosnoc relies on the recently introduced Finite Elements with Switch Detection (FESD) which enables high accuracy optimal control of systems with switches and jumps. It enables the treatment of a broad class of nonsmooth systems in a unified way.
+
+nosnoc offers several ways to treat switched systems, piecewise smooth systems, Filippov systems, hybrid systems, rigid body models with impacts and friction in simulation, and optimal control. It discretizes a Dynamic Complementarity System (DCS) with the FESD method and solves the resulting mathematical program with complementarity constraints (MPCCs). The MPCCs are solved in a homotopy loop with a standard solver like IPOPT or SNOPT. The user may directly provide a DCS or define the different modes of a Filippov system and the reformulation is automated.
+
+The package is based on CasADi (https://www.syscop.de/research/software/nosnoc#:~:text=is%20based%20on-,CasADi,-.%20It%20has%20both). It has both a MATLAB and python version, the source code can be found at:
+https://github.com/nurkanovic/nosnoc
+https://www.syscop.de/research/software/nosnoc#:~:text=nosnoc%20for%20MATLAB-,nosnoc%20for%20python%C2%A0,-Copyright%20%C2%A9%202024%20University
