@@ -92,6 +92,76 @@ Explore examples and installation instructions on the [LCQPow GitHub repository]
 
 ---
 
+## **Past Software Developments (possibly not maintained anymore)**
+
+### [qpOASES](https://github.com/coin-or/qpOASES)
+**Keywords**: Quadratic programming
+
+qpOASES is an open-source C++ implementation of the recently proposed online active set strategy, which was inspired by important observations from the field of parametric quadratic programming (QP). It has several theoretical features that make it particularly suited for model predictive control (MPC) applications.
+
+For further information and installation intstructions visit the [qpOASES webpage](https://projects.coin-or.org/qpOASES).
+
+---
+
+### [tmpc](https://github.com/mkatliar/tmpc)
+**Keywords**: Optimal Control, SQP
+
+tmpc is a C++ library for Model Predictive Control
+
+The source code is publicly available on https://gitlab.syscop.de/mikhail.katliar/tmpc/-/tree/master
+
+---
+
+### [casiopeia](https://github.com/adbuerger/casiopeia)
+**Keywords**: Parameter Estimation, Experimental Design
+
+casiopeia holds a user-friendly environment for optimum experimental design and parameter estimation and identification applications. It does so by providing Python classes that can be initialized with the problem specifications, while the computations can then easily be performed using the available class functions.
+
+Please note: casiopeia makes use of the optimization framework [CasADi](http://www.casadi.org/). For casiopeia to work, you need CasADi version = 3.1.0 to be installed on your system, otherwise the installation of casiopeia will abort.
+
+casiopeia is still in it's testing state, and does not yet contain all the features it will provide in future versions. Therefore, you should check for updates on a regular basis.
+
+For an installation guide, a tutorial on how to use casiopeia and a detailed documentation, please visit the [manual pages](http://casiopeia.readthedocs.io/).
+
+---
+
+### [ACADO Toolkit](https://github.com/acado/acado)
+**Keywords**: Nonlinear Optimal Control, Model Predictive Control, Code Generation
+
+NOTE: ACADO Toolkit is not maintained anymore. We recommend using acados instead, which offers similar functionalites.
+ 
+[ACADO Toolkit](https://acado.github.io/) is a software environment and algorithm collection for automatic control and dynamic optimization. It provides a general framework for using a great variety of algorithms for direct optimal control, including model predictive control, state and parameter estimation and robust optimization. ACADO Toolkit is implemented as self-contained C++ code and comes along with user-friendly [MATLAB interface](http://acado.github.io/matlab_overview.html). The object-oriented design allows for convenient coupling of existing optimization packages and for extending it with user-written optimization routines.
+
+For an installation guide, tutorial examples and a detailed documentation, please visit the [ACADO Toolkit webpage](http://acado.github.io/index.html).In addition, user questions can be posted on [our sourceforge forum](https://sourceforge.net/p/acado/discussion/) while the codebase itself is hosted on our github page.
+
+---
+
+### [Open Optimal Control Library (OpenOCL)](https://github.com/OpenOCL/OpenOCL)
+**Keywords**: Modeling, Optimal Control, Trajectory Optimization
+
+OpenOCL is a software-toolbox written in Matlab for modeling optimal control and trajectory optimization problems. It interfaces Ipopt to solve the optimal control problems numerically, and calculates the necessary derivatives by automatic differentiation using CasADi. It implements direct methods to optimal control (collocation/pseudo-spectral methods).
+
+Visit the project website to get more information and download the software: https://openocl.org
+
+---
+
+### [Optidef](https://github.com/jeslago/optidef)
+**Keywords**: Latex Package
+
+A small li­brary that pro­vides a stan­dard set of en­vi­ron­ments for writ­ing op­ti­miza­tion prob­lems in Latex. You can find the official repository in ctan and the last updated version in github.
+
+Usage
+If you update your TeX packages ([instructions here](http://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution)), you can simply use it by adding to the preamble of your document:
+
+\usepackage{optidef}
+
+If you do not want to update your packages, just download the package from ctan and add it to your project path.
+
+Documentation
+[optidef.pdf](https://www.syscop.de/files/users/Jesus.lago/optidef.pdf)
+
+---
+
 ## **Contributions**
 
 If you have suggestions or would like to contribute a new tool, feel free to open a pull request or an issue. This repository aims to grow with the optimization and control community!
