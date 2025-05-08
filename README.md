@@ -1,8 +1,8 @@
 # Optimal Control Software Repository
 
-Welcome to the **Optimal Control Software Repository**, a curated collection of tools and software packages for optimization and control. These tools cover a variety of needs, from solving optimal control problems for embedded systems to handling nonsmooth dynamical systems, model predictive control, and more.
+Welcome to the **Optimal Control Software Repository**, a curated collection of tools and software packages for optimization and control. These tools support a wide range of applications, including model predictive control, dynamic optimization, embedded solvers, and systems with nonsmooth dynamics.
 
-This repository is structured to help users quickly locate the most suitable tools for their projects and includes installation instructions, links to documentation, and source code for each software package.
+Before diving into the list, consider exploring the [**PLATO Optimization Software Guide**](https://plato.asu.edu/guide.html) — a decision tree resource that helps identify appropriate software for your optimization problem. Maintained by Arizona State University, PLATO categorizes both public domain and open academic tools, with emphasis on problem classes and licensing. It is especially helpful if you’re unsure which solver or package is right for your need
 
 ---
 
