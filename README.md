@@ -162,6 +162,104 @@ Documentation
 
 ---
 
+Here is a clean set of entries for the tools you listed. No em dashes appear anywhere, and each entry follows the same concise, repository ready format.
+
+---
+
+## CVXPY
+
+**Keywords**: Convex optimization, modeling language, mixed integer convex programs
+
+CVXPY is a Python embedded language for expressing convex optimization problems in a natural mathematical form. It supports
+
+* Linear, quadratic, conic, and semidefinite programs
+* Geometric and quasiconvex programs
+* Mixed integer convex models
+* GPU acceleration beginning in version 1.7
+* Solvers such as OSQP, SCS, and Clarabel
+
+Website: [https://www.cvxpy.org](https://www.cvxpy.org)
+
+---
+
+## Fatrop
+
+**Keywords**: Nonlinear programming, real time optimization, interior point methods
+
+Fatrop is a constrained nonlinear optimal control problem solver that is fast and achieves a high numerical robustness.
+
+The main features of the solver are:
+
+high numerical robustness thanks to advanced numerical optimization techniques, inspired by Ipopt
+fast by exploiting the optimal control problem structure through a specialized linear solver, based on a generalized Riccati recursion
+high performance linear algebra through integration of BLASFEO
+effective handling of path equality and inequality constraints, without relying on penalty methods
+ability to incorporate exact Lagrangian Hessian information
+ability to be initialized from any, possibly infeasible, solution estimate
+
+Repository: [https://github.com/meco-group/fatrop](https://github.com/meco-group/fatrop)
+
+---
+
+## MadNLP
+
+**Keywords**: Interior point methods, large scale nonlinear programming, Julia
+
+MadNLP is a nonlinear programming solver written in Julia. It features a modern interior point method that exploits sparsity and supports automatic differentiation through the Julia ecosystem. It integrates well with modeling tools like JuMP.
+
+Repository: [https://github.com/MadNLP/MadNLP.jl](https://github.com/MadNLP/MadNLP.jl)
+
+---
+
+## OpEn
+
+**Keywords**: Operator splitting, embedded optimization, MPC
+
+OpEn is a toolkit for generating fast tailored solvers for optimal control and embedded decision making. It uses proximal splitting methods and produces C code suitable for real time systems. The Python interface is casadi based and supports parametric MPC problems.
+
+Repository: [https://github.com/alphaville/optimization-engine](https://github.com/alphaville/optimization-engine)
+
+---
+
+## DoMPC
+
+**Keywords**: Nonlinear MPC, Python, simulation and control
+
+DoMPC is a Python framework that simplifies the setup of nonlinear model predictive controllers. It offers
+
+* Direct multiple shooting
+* Integrators and discretization tools
+* Simulation and closed loop control modules
+
+Repository: [https://github.com/do-mpc/do-mpc](https://github.com/do-mpc/do-mpc)
+
+---
+
+## JAXopt
+
+**Keywords**: Auto differentiation, first order methods, JAX optimization
+
+JAXopt is a library of gradient based and projection based optimization algorithms that run on CPU, GPU, or TPU. It supports
+
+* First order solvers
+* Fixed point iterations
+* Implicit differentiation
+* JIT compilation via JAX
+
+Repository: [https://github.com/google/jaxopt](https://github.com/google/jaxopt)
+
+---
+
+## Diffrax
+
+**Keywords**: Differentiable ODE solvers, JAX, neural ODEs
+
+Diffrax provides a large collection of numerical integrators for ordinary differential equations fully compatible with JAX autodiff and JIT compilation. It supports event handling, adaptive step solvers, and implicit integrators, making it suitable for scientific computing and machine learning.
+
+Repository: [https://github.com/patrick-kidger/diffrax](https://github.com/patrick-kidger/diffrax)
+
+---
+
 ## **Contributions**
 
 If you have suggestions or would like to contribute a new tool, feel free to open a pull request or an issue. This repository aims to grow with the optimization and control community!
