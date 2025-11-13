@@ -162,11 +162,7 @@ Documentation
 
 ---
 
-Here is a clean set of entries for the tools you listed. No em dashes appear anywhere, and each entry follows the same concise, repository ready format.
-
----
-
-## CVXPY
+## [CVXPY](https://www.cvxpy.org)
 
 **Keywords**: Convex optimization, modeling language, mixed integer convex programs
 
@@ -182,7 +178,7 @@ Website: [https://www.cvxpy.org](https://www.cvxpy.org)
 
 ---
 
-## Fatrop
+## [Fatrop](https://github.com/meco-group/fatrop)
 
 **Keywords**: Nonlinear programming, real time optimization, interior point methods
 
