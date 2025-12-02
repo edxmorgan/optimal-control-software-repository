@@ -72,6 +72,8 @@ CasADi is a powerful framework for algorithmic differentiation and numeric optim
 
 Access tutorials and documentation on the [CasADi webpage](https://web.casadi.org/).
 
+For a extensive list of projects based on CasADi, refer to [best-of-casadi](https://github.com/brunoml5/best-of-casadi) or [promo](https://github.com/casadi/promo).
+
 ---
 
 ### [BLASFEO](https://github.com/giaf/blasfeo)
